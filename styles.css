@@ -71,5 +71,7 @@ p {
 }
 
 iframe{ 
-	border: none; 
+	border: none;
+	width:700px;
+	height:500px;
 }

@@ -9,8 +9,6 @@ int radius = 200;
 int divisor = 10;
 int filled = 2;
 
-float x = TWO_PI/divisor;
-
 void draw(){
   translate(width/2,height/2);
   background(bg);
@@ -45,7 +43,7 @@ void drawDivisions(){
   strokeWeight(2);
   rotate(PI/2);
   for(int i = 0; i < divisor; i++){ //<>//
-    rotate(TWO_PI/divisor);
+    rotate(radians(360/divisor));
     line(0,0,0,-200);
   }
   rotate(3*PI/2);
@@ -61,6 +59,8 @@ void mouseDragged(){
    } else if(key == 'f'){
      if(filled > divisor)
        filled = divisor;
+     else if(filled < 0)
+       filled = 0;
      else
        filled = mouseX / 25;
    }
