@@ -69,3 +69,7 @@ header {
 p {
 	line-height:2rem;
 }
+
+iframe{ 
+	border: none; 
+}
