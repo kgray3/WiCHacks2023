@@ -20,8 +20,8 @@ public class MP3Creator {
     public static HashMap<Integer,Boolean> pHashMap = new HashMap<>();
     //public static HashMap<Integer, Boolean> exploredIndices = new HashMap<>();
     public static void main(String[] args) {
-        int[] xArr = {2,2,2,3,4};
-        int[] yArr = {-12,-10,4,3,-4};
+        int[] xArr = {0,(int) Math.PI/4,(int) Math.PI, (int) Math.PI * (3/2) + 1, (int) (2 * Math.PI)};
+        int[] yArr = {1,0,1,0,1};
 
         Point[] arr = createPoints(xArr, yArr);
         String[][] musicPatterns = createJFugueMusicString(arr);

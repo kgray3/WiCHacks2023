@@ -34,8 +34,10 @@ public class Point {
             octave = '4';
         } else if ( yCoord >= 0 && yCoord < 8 ) {
             octave = '5';
-        } else {
+        } else if ( yCoord >= 8 && yCoord < 16) {
             octave = '6';
+        } else {
+            octave = '7';
         }
 
         noteRepresentation = "" + pitch + octave + duration;
