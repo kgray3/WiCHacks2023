@@ -9,15 +9,93 @@
 <header><h1>Thee Website</h1></header>
 
 <div class="sidebar">
-<a class="link" href="mathesthesia.html">Mathesthesia</a></br>
-<a class="link" href="addition.html">Addition/Multiplication</a></br>
-<a class="link" href="fractions.html">Fractions</a></br>
-<a class="link" href="riemanns.html">Riemann's Sums</a>
+<a href="mathesthesia.html">Mathesthesia</a></br>
+<a href="addition.html">Addition/Multiplication</a></br>
+<a href="fractions.html">Fractions</a></br>
+<a href="riemanns.html">Riemann's Sums</a>
 </div>
 
 <div class="content">
-<h2>Welcome!</h2>
-<p>This is our WiCHacks submission, emphasizing the beauty of visualizing and even hearing math!</p>
+<h2>Mathesthesia</h2>
+<h3 style="text-indent: 25px;">Have you ever wondered what y = x sounds like?</h3>
+<p style="text-indent: 40px;">     Mathesthesia is based off of "chromesthesia," or the ability to see colors when a musical note is played.
+    However, instead of pairing music with colors, we pair music with mathematical equations with different features
+    of music, using pitch and duration, to audibly demonstrating the "movement" of an equation in terms of slope and 
+    periods of increasing/decreasing values.
+</p>
+
+
+<h3 style="text-indent: 25px;">Listen Here!</h3>
+<b><p>All graphs were created using <a href="https://www.desmos.com/calculator"></a> Desmos***</p></b>
+
+    <div class="row">
+        <div class="column">
+            <img src="images/sinx.png" alt="Graph of y = sin(x)" style="border:1px solid black" width="300" 
+            height="154">
+            <p>The graph and audio file of y = sin(x).</p>
+        <audio controls ="controls">
+            <source src="Music Files/sinx.mp3">
+        " Your browser does not support the audio element. "
+        </audio>
+        </div>
+        <div class="column">
+            <img src="images/cosx.png" alt="Graph of y = cos(x)" style="border:1px solid black" width="300" 
+            height="154">
+            <p>The graph and audio file of y = cos(x).</p>
+        <audio controls ="controls">
+        <source src="Music Files/cosx.mp3">
+        " Your browser does not support the audio element. "
+        </audio>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="images/y=x.png" alt="Graph of y = x" style="border:1px solid black" width="300" 
+            height="154">
+            <p>The graph and audio file of y = x.</p>
+        <audio controls ="controls">
+            <source src="Music Files/y=x.mp3">
+        " Your browser does not support the audio element. "
+        </audio>
+        </div>
+        <div class="column">
+            <img src="images/y=x2.png" alt="Graph of y = x^2" style="border:1px solid black" width="300" 
+            height="154">
+            <p>The graph and audio file of y = x^2.</p>
+        <audio controls ="controls">
+        <source src="Music Files/y=x2.mp3">
+        " Your browser does not support the audio element. "
+        </audio>
+        </div>
+    </div>
+
+    <b><p>Bonus: What happens when the equation is not a function?</p></b>
+    <audio controls ="controls">
+        <source src="Music Files/newnotafunction.mp3">
+        " Your browser does not support the audio element. "
+        </audio>
+
+
+
+
+    <h3 style="text-indent: 25px;">Patterns?! Patterns!</h3>
+    <p style="text-indent: 40px;">Mathesthesia demonstrates increasing and decreasing intervals using ascending and descending 
+    pitches. The function y = x^2 has more noticeable jumps in pitches than the function y = x. The different starting positions
+    and oscillation of sin(x) and cos(x) are easily demonstrated using different starting pitches and ascending/descending pitches. 
+    Mathesthesia can even audibly depict when an equation is not a function by playing pitches at the same time where the 
+    equation fails the vertical line test.</p>
+
+    <h3 style="text-indent: 25px;">How it Works</h3>
+<p style="text-indent: 40px;">    Mathesthesia uses the x-coordinates of an equation to set music duration. Duration is 
+    calculated by calculating the distance between two x values in an equation. At the moment, Mathesthesia treats every
+    equation as if its domain and range are discrete, to minimize complexity. The y-axis is is mapped to pitches and octaves on the 
+    C Major scale ( C D E F G A B ). As the range increases, the octave increases. Mathesthesia is written in Java using the music
+    library, <a href="http://www.jfugue.org/">JFugue</a> to create MIDI files. The back-end Mathesthesia is not connected to the 
+    front-end currently; samples were generated using Mathesthesia and the resultant MIDI files are displayed here.</p>
+    </div>
+
+
 </div>
 
 </body>

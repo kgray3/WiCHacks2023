@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	overflow: scroll;
 }
 html {
 	font-family:sans-serif;
@@ -80,3 +81,17 @@ iframe{
 	width:700px;
 	height:500px;
 }
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+	float: left;
+	width: 50%;
+	padding: 5px;
+	
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
