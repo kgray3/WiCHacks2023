@@ -31,11 +31,6 @@ void draw(){
     text("subintervals: " + subintervals, 100, 220);
     text("approximated area: " + area, 100, 240);
   }
-
-  if(keyPressed == true){
-    if(key == 'e')
-      exit();
-  }
 }
 
 // x*x + 2

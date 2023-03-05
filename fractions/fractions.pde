@@ -26,11 +26,6 @@ void draw(){
   
   drawFilled();
   drawDivisions();
-  
-  if(keyPressed == true){
-    if(key == 'e')
-      exit();
-  }
 }
 
 void drawFilled() {
